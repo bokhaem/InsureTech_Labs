@@ -1,18 +1,10 @@
 @echo off
-chcp 65001 >nul
 echo ====================================================
-echo 🚀 보험AI노트 - 작업물 클라우드(GitHub) 업로드 (퇴근/작업종료)
+echo [2] Uploading today's work to GitHub...
 echo ====================================================
-echo.
-echo 변경된 모든 파일을 안전하게 깃허브로 업로드합니다...
-echo.
-
 git add .
-git commit -m "자동 백업/동기화: %date% %time%"
+git commit -m "Auto sync from batch file"
 git push origin main
-
 echo.
-echo ====================================================
-echo ✅ 업로드가 완료되었습니다! 이제 안심하고 PC를 끄셔도 됩니다.
-echo ====================================================
+echo Upload Complete! You can close this window.
 pause
